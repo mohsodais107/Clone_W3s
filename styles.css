@@ -1,0 +1,386 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe', sans-serif;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Segoe';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Segoe\ UI.woff') format('woff');
+}
+@font-face {
+    font-family: 'Segoe Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Segoe\ UI\ Bold.woff') format('woff');
+}
+
+/* Body */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    padding: 8px 12px;
+}
+/* Left Side of Header */
+.leftSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+}
+/* Logo */
+.headerLogo {
+    height: 100%;
+    width: 56px;
+}
+.headerLogo img {
+    height: 36px;
+}
+/* Tabs */
+.headerTabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.tutorialsMenue,
+.exercisesMenue,
+.CertificatesMenue,
+.servicesMenue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 22px 16px;
+}
+/* .tutorialsMenue:hover,
+.exercisesMenue:hover,
+.CertificatesMenue:hover,
+.servicesMenue:hover {
+    background-color: #04AA6D;
+    color: white;
+} */
+.tutorialsMenue img,
+.exercisesMenue img,
+.CertificatesMenue img,
+.servicesMenue img {
+    width: 8px;
+}
+/* Search bar */
+.searchBar {
+    height: 100%;
+    padding-right: 24px;
+    padding-left: 12px;
+    padding: auto;
+}
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    width: 175px;
+    height: 36px;
+    border: #999 solid 1px;
+    /* border: #04aa6d solid 3px; */
+    border-radius: 32px;
+}
+.searchContainer p {
+    font-size: 14px;
+    color: #999;
+}
+.searchIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: square;
+}
+.searchIcon img {
+    width: 16px;
+    height: 16px;
+}
+/* Light and Dark Mode */
+.lightModeToggleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 56px;
+}
+.lightModeToggleBtn img {
+    width: 20PX;
+}
+/* Right Side */
+.rightSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+/* Header buttons */
+.headerBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.jobsBtn, .spacesBtn, .certifiedBtn, .mySchoolBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 24px;
+    background-color: transparent;
+    border: none;
+}
+.jobsBtn:hover, .spacesBtn:hover, .certifiedBtn:hover, .mySchoolBtn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.jobsBtn img, .spacesBtn img, .certifiedBtn img {
+    width: 16px;
+}
+/* Profile */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.profile img {
+    width: 28px;
+    height: 28px;
+}
+/* Tutorials titles btns navbar in Header */
+header section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    background-color: #282A35;
+}
+header section button:first-child {
+    background-color: #04AA6D;
+    color: white;
+}
+header section button:first-child:hover {
+    background-color: #04AA6D;
+    color: white;
+}
+header section button {
+    padding: 8px 14px 8px 14px;
+    background-color: transparent;
+    letter-spacing: 1.3px;
+    color: white;
+    border: none;
+    display: flex;
+    width: auto;
+    white-space: nowrap;
+}
+header section button:hover {
+    background-color: #101114;
+    color: white;
+}
+header section button p {
+    width: 100%;
+}
+/* Body of Contents */
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+    overflow-y: scroll;
+}
+/* Sidebar */
+aside {
+    width: 230px;
+    height: 100%;
+    background-color: #E7E9EB;
+    display: inline-block;
+    position: sticky;
+    top: 0px;
+    overflow-y: scroll;
+}
+aside div.groupOfLinks {
+    margin: 24px 0px 24px 0px;
+}
+aside .groupOfLinks h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+aside .groupOfLinks ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+aside .groupOfLinks ul li {
+    font-size: 15px;
+    width: 100%;
+    height: 28px;
+    padding: 4px 0px 4px 16px; /* top right bottom left*/
+}
+aside .groupOfLinks ul li:hover {
+    background-color: #bfbfbf;
+}
+aside .groupOfLinks ul li.selected {
+    background-color: #04AA6D;
+    color: white;
+}
+/* Contents */
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: auto;
+    width: 100%;
+}
+/* Main Content of tutorial */
+main {
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+}
+/* Footer */
+footer {
+    width: 100%;
+    height: 860px;
+    padding: 40px 80px 300px 80px;
+    background-image: url("images/lable/footerBG.gif");
+    position: relative;
+}
+.astronaut {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.topContent {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 60px;
+}
+footer .topContent img {
+    width: 46px;
+}
+footer .topContent a {
+    color: #FFF4A3;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+}
+footer .topContent a:hover {
+    text-decoration: underline;
+}
+.middleContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 180px;
+    padding-left: 40px;
+}
+.middleContent h3 {
+    color: #ddd;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+.middleContent div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    /* gap: 4px; */
+}
+.middleContent div a {
+    text-decoration: none;
+    color: #ddd;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+}
+.middleContent div a:hover {
+    color: #FFF4A3;
+}
+.bottomnContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    padding-left: 40px;
+    padding-top: 60px;
+}
+.bottomnContent .socialLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+.facebook, .discord, .linkedin, .instagram {
+    width: 24px;
+    fill: #ddd;
+}
+.termsText {
+    font-family: Verdana,sans-serif;
+    color: #ddd;
+    font-size: 12px;
+}
+.copyrightText {
+    font-family: Verdana,sans-serif;
+    color: #ddd;
+    font-size: 12px;
+}
+.bottomnContent a {
+    color: #ddd;
+    text-decoration: none;
+}
+.bottomnContent a:hover {
+    color: #FFF4A3;
+    text-decoration: underline;
+}
+.termsText a, .copyrightText a {
+    text-decoration: underline;
+}
