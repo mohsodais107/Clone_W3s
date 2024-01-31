@@ -226,7 +226,7 @@ header section button p {
 }
 /* Sidebar */
 aside {
-    width: 230px;
+    width: 250px;
     height: 100%;
     background-color: #E7E9EB;
     display: inline-block;
@@ -274,8 +274,201 @@ aside .groupOfLinks ul li.selected {
 /* Main Content of tutorial */
 main {
     width: 100%;
-    height: 1000px;
+    height: auto;
+    padding-bottom: 40px;   /*  ------ not important ------ */
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: start;
+}
+/* Tutorials */
+main .tutorials {
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+    padding-right: 32px;
+    padding-left: 32px;
+}
+main .tutorials .topHeading {
+    font-size: 42px;
+    font-weight: 400;
+    font-family: 'Segoe UI', sans-serif;
+}
+main .tutorials .nextAndPrevBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+/* Next and Home Btns */
+main .tutorials .nextAndPrevBtn button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding: 12px 20px;
+    color: white;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+main .tutorials .nextAndPrevBtn button:hover {
+    background-color: #04915d;
+}
+main .tutorials .nextAndPrevBtn button img {
+    width: 12px;
+}
+/* Details of tutorials */
+.details {
+    
+}
+/* Detail One */
+.detailOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+    padding: 40px 32px;
+    background-color: #D9EEE1;
+    margin-left: -32px;
+    margin-right: -32px;
+    margin-top: 20px;
+
+}
+.detailOne a:nth-child(4) {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: #04AA6D;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+.detailOne a:nth-child(4):hover {
+    background-color: #04915d;
+}
+.detailOne a:nth-child(5) {
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: #282A35 !important;
+    border-radius: 5px;
+    position: relative;
+}
+.detailOne a:nth-child(5):hover {
+    background-color: #000000 !important;
+}
+.detailOne a span {
+    position: absolute;
+    top: -14px;
+    left: -22px;
+    transform: rotate(-20deg);
+    padding: 6px 16px;
+    background-color: #FFF4A3 !important;
+    color: black !important;
+    font-size: 12px;
+    border-radius: 24px;
+}
+/* Detail Two */
+.detailTwo {
+
+    h2 {
+        font-size: 32px;
+        font-weight: 400;
+    }
+    p {
+        font-family: Verdana,sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 1.2em;
+        margin-bottom: 1.2em;
+    }
+    span {
+        font-size: 14px;
+        font-weight: 600;
+
+    }
+}
+.detailTwo-codeExample {
+    width: 100%;
+    height: auto;
+    background-color: #E7E9EB;
+    margin: 28px -20px 28px -20px;
+    padding: 16px 24px;
+    border-radius: 5px;
+
+    p {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 8px 0px 14px 0px !important;
+    }
+    div {
+        width: 100%;
+        background-color: white;
+        border-left: solid 5px #04AA6D;
+        padding: 8px 12px;
+
+        code {
+            font-size: 14px;
+        }
+    }
+    button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+        padding: 12px 20px;
+        color: white;
+        background-color: #04AA6D;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #04915d;
+    }
+}
+.blueText {
+    color: mediumblue;
+    font-weight: 500 !important;
+}
+.redText {
+    color: red;
+    font-weight: 500 !important;
+}
+.brownText {
+    color: brown;
+    font-weight: 500 !important;
+}
+.tutorials .hr1 {
+    width: 100%;
+    color: #eeeeee33;
+    margin: 20px -16px;
+}
+/* ADS */
+main .advertisement {
+    width: 450px;
+    height: 100%;
+    padding-top: 24px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-left: #E7E9EB solid 1px;
 }
 /* Footer */
 footer {
@@ -317,32 +510,34 @@ footer .topContent a:hover {
     align-items: start;
     gap: 180px;
     padding-left: 40px;
-}
-.middleContent h3 {
-    color: #ddd;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 15px;
-    margin-bottom: 20px;
-}
-.middleContent div {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    /* gap: 4px; */
-}
-.middleContent div a {
-    text-decoration: none;
-    color: #ddd;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 15px;
-}
-.middleContent div a:hover {
-    color: #FFF4A3;
+
+    h3 {
+        color: #ddd;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 15px;
+        margin-bottom: 20px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        /* gap: 4px; */
+
+        a {
+            text-decoration: none;
+            color: #ddd;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 15px;
+        }
+        a:hover {
+            color: #FFF4A3;
+        }
+    }
 }
 .bottomnContent {
     display: flex;
@@ -352,12 +547,13 @@ footer .topContent a:hover {
     gap: 12px;
     padding-left: 40px;
     padding-top: 60px;
-}
-.bottomnContent .socialLinks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
+
+    .socialLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
 }
 .facebook, .discord, .linkedin, .instagram {
     width: 24px;
